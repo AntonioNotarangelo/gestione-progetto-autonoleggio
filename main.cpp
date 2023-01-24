@@ -11,10 +11,24 @@ int main()
      ifstream corridoio("auto.csv");
      string nome_variabile;
      getline(corridoio, nome_variabile);
+     getline(corridoio, nome_ variabile);
+     string categoria;
 
+    while (!fin.eof())
+    {
+        getline(corridoio,categoria,',');
+        getline(corridoio,marca,',');
+        getline(corridoio,modello,',');
+        getline(corridoio,colore,',');
+        corridoio>>lunedì
+        corridoio>>martedì
+        corridoio>>mercoledì
+        corridoio>>giovedì
+        corridoio>>venerdì
+        corridoio>>sabato
+        corridoio>>domenica
+    }
 
-
-    while
 
 
 
