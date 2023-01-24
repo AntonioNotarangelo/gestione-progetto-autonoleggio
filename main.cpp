@@ -20,13 +20,14 @@ int main()
         getline(corridoio,marca,',');
         getline(corridoio,modello,',');
         getline(corridoio,colore,',');
-        corridoio>>lunedì
-        corridoio>>martedì
-        corridoio>>mercoledì
-        corridoio>>giovedì
-        corridoio>>venerdì
-        corridoio>>sabato
-        corridoio>>domenica
+        corridoio>>lunedì;
+        corridoio>>martedì;
+        corridoio>>mercoledì;
+        corridoio>>giovedì;
+        corridoio>>venerdì;
+        corridoio>>sabato;
+        corridoio>>domenica;
+        cout<<categoria<<marca<<modello<<colore<<lunedì<<martedì<<mercoledì<<giovedì<<venerdì<<sabato<<domenica;
     }
 
 
