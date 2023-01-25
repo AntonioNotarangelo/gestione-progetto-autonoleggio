@@ -2,6 +2,15 @@
 #include <fstream>
 
 using namespace std;
+
+struct macchina{
+
+    string categoria,marca,modello,colore;
+
+     char lunedi,martedi,mercoledi,giovedi,venerdi,sabato,domenica;
+
+};
+
 int main()
 {
    /*Scrivere un programma C++che permetta all'utente di inserire la categoria di macchina e i giorni in cui intende affittare l'auto
@@ -11,23 +20,42 @@ int main()
      ifstream corridoio("auto.csv");
      string nome_variabile;
      getline(corridoio, nome_variabile);
-     getline(corridoio, nome_ variabile);
-     string categoria;
-
-    while (!fin.eof())
+     getline(corridoio, nome_variabile);
+     macchina appoggio;
+    while (!corridoio.eof())
     {
-        getline(corridoio,categoria,',');
-        getline(corridoio,marca,',');
-        getline(corridoio,modello,',');
-        getline(corridoio,colore,',');
-        corridoio>>lunedì;
-        corridoio>>martedì;
-        corridoio>>mercoledì;
-        corridoio>>giovedì;
-        corridoio>>venerdì;
-        corridoio>>sabato;
-        corridoio>>domenica;
-        cout<<categoria<<marca<<modello<<colore<<lunedì<<martedì<<mercoledì<<giovedì<<venerdì<<sabato<<domenica;
+        getline(corridoio,appoggio.categoria,',');
+        getline(corridoio,appoggio.marca,',');
+        getline(corridoio,appoggio.modello,',');
+        getline(corridoio,appoggio.colore,',');
+        corridoio>>appoggio.lunedi;
+        corridoio>>appoggio.lunedi;
+        corridoio>>appoggio.martedi;
+        corridoio>>appoggio.martedi;
+        corridoio>>appoggio.martedi;
+        corridoio>>appoggio.mercoledi;
+        corridoio>>appoggio.mercoledi;
+        corridoio>>appoggio.mercoledi;
+        corridoio>>appoggio.giovedi;
+        corridoio>>appoggio.giovedi;
+        corridoio>>appoggio.giovedi;
+        corridoio>>appoggio.venerdi;
+        corridoio>>appoggio.venerdi;
+        corridoio>>appoggio.venerdi;
+        corridoio>>appoggio.venerdi;
+        corridoio>>appoggio.sabato;
+        corridoio>>appoggio.sabato;
+        corridoio>>appoggio.sabato;
+        corridoio>>appoggio.sabato;
+        corridoio>>appoggio.domenica;
+        corridoio>>appoggio.domenica;
+        corridoio>>appoggio.domenica;
+
+        cout<<appoggio.categoria<<appoggio.marca<<appoggio.modello<<appoggio.colore
+        <<appoggio.lunedi<<appoggio.martedi<<appoggio.mercoledi
+        <<appoggio.giovedi<<appoggio.venerdi<<appoggio.sabato<<appoggio.domenica<<endl;//<" "<<appoggio.lunedi;
+
+
     }
 
 
