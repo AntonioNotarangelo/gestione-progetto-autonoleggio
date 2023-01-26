@@ -57,8 +57,16 @@ int main()
          cin>> categoria_scelta;
          cout<<" Quali giorni desidera affittare la macchina";
          cin.ignore();
-         getline(cin,giorni_della_settimana)
+         getline(cin,giorni_della_settimana);
+         for (int variabile_contatore=0; variabile_contatore<numero_macchine; variabile_contatore++)
+         {
 
+
+            if(vettore_delle_auto[variabile_contatore].categoria==categoria_scelta)
+                if(vettore_delle_auto[variabile_contatore])
+
+
+             }
 
 
 
