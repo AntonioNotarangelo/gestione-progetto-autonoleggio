@@ -58,12 +58,19 @@ int main()
          cout<<" Quali giorni desidera affittare la macchina";
          cin.ignore();
          getline(cin,giorni_della_settimana);
+         int vettore_delle_posizioni[];
          for (int variabile_contatore=0; variabile_contatore<numero_macchine; variabile_contatore++)
          {
-
-
             if(vettore_delle_auto[variabile_contatore].categoria==categoria_scelta)
-                if(vettore_delle_auto[variabile_contatore])
+              for (int n=0; n<giorni_della_settimana.length());n++)
+            switch(giorni_della_settimana.at(n))
+            {
+
+                case '1':if(vettore_delle_auto[variabile_contatore].lunedi==" L")
+                vettore_delle_posizioni
+            }
+
+
 
 
              }
