@@ -113,9 +113,11 @@ int main()
 
              }
 
-                string le_auto;
+                int le_auto;
                 cout<<"che auto desidera";
                 cin>> le_auto;
+                vettore_delle_auto[vettore_delle_posizioni[le_auto]] =
+
 
 
 
