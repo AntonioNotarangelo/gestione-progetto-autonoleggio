@@ -113,7 +113,9 @@ int main()
 
              }
 
-
+                string le_auto;
+                cout<<"che auto desidera";
+                cin>> le_auto;
 
 
 
