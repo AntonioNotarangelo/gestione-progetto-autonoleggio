@@ -58,16 +58,41 @@ int main()
          cout<<" Quali giorni desidera affittare la macchina";
          cin.ignore();
          getline(cin,giorni_della_settimana);
-         int vettore_delle_posizioni[];
+         int vettore_delle_posizioni[100];
+         int variabile_contatore_delle_posizioni=0;
          for (int variabile_contatore=0; variabile_contatore<numero_macchine; variabile_contatore++)
          {
+             bool ok=true;
             if(vettore_delle_auto[variabile_contatore].categoria==categoria_scelta)
-              for (int n=0; n<giorni_della_settimana.length());n++)
-            switch(giorni_della_settimana.at(n))
             {
 
-                case '1':if(vettore_delle_auto[variabile_contatore].lunedi==" L")
-                vettore_delle_posizioni
+              for (int n=0; n<giorni_della_settimana.length());n++)
+                    switch(giorni_della_settimana.at(n))
+                    {
+
+                        case '1': if(vettore_delle_auto[variabile_contatore].lunedi==" A")
+                                    ok=false;
+                                    break;
+                        case '2': if(vettore_delle_auto[variabile_contatore].martedi==" A")
+                                    ok=false;
+                                    break;
+                        case '3': if(vettore_delle_auto[variabile_contatore].mercoledi==" A")
+                                    ok=false;
+                                    break;
+                        case '4': if(vettore_delle_auto[variabile_contatore].giovedi==" A")
+                                    ok=false;
+                                    break;
+                        case '5': if(vettore_delle_auto[variabile_contatore].venerdi==" A")
+                                    ok=false;
+                                    break;
+                        case '6': if(vettore_delle_auto[variabile_contatore].sabato==" A")
+                                    ok=false;
+                                    break;
+                        case '7': if(vettore_delle_auto[variabile_contatore].domenica==" A")
+                                    ok=false;
+                    }
+            vettore_delle_posizioni[variabile_contatore_delle_posizioni] = variabile_contatore;
+            variabile_contatore_delle_posizioni++;
             }
 
 
