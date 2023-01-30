@@ -96,7 +96,20 @@ int main()
             }
 
 
+             }
 
+
+             cout<<"scegliere una delle seguenti auto";
+             for (int b=0; b<variabile_contatore_delle_posizioni;b++)
+             {
+
+
+               cout<<b+1<<'-'<<vettore_delle_auto[vettore_delle_posizioni[b]].categoria<<' '<<vettore_delle_auto[vettore_delle_posizioni[b]].marca<<' '
+               <<vettore_delle_auto[vettore_delle_posizioni[b]].modello<<' '<<vettore_delle_auto[vettore_delle_posizioni[b]].colore<<' '
+               <<vettore_delle_auto[vettore_delle_posizioni[b]].lunedi<<' '<<vettore_delle_auto[vettore_delle_posizioni[b]].martedi<<' '
+               <<vettore_delle_auto[vettore_delle_posizioni[b]].mercoledi<<' '<<vettore_delle_auto[vettore_delle_posizioni[b]].giovedi<<' '
+               <<vettore_delle_auto[vettore_delle_posizioni[b]].venerdi<<' '<<vettore_delle_auto[vettore_delle_posizioni[b]].sabato<<' '
+               <<vettore_delle_auto[vettore_delle_posizioni[b]].domenica<<'\n ';
 
              }
 
